@@ -1,0 +1,51 @@
+{
+  "name": "bdm-ime-skin",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "baidu",
+    "ime",
+    "skin",
+    "typescript"
+  ],
+  "author": "pansong291",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pansong291/bdm-ime-skin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pansong291/bdm-ime-skin/issues"
+  },
+  "homepage": "https://github.com/pansong291/bdm-ime-skin#readme",
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
+    "tsc": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.5.1",
+    "@types/prettier": "^2.7.3",
+    "prettier": "^2.8.8",
+    "rollup": "^3.29.4",
+    "rollup-plugin-dts": "5.2.0",
+    "tslib": "^2.6.2",
+    "typescript": "^4.9.5"
+  }
+}
